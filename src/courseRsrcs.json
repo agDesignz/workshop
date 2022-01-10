@@ -1,0 +1,23 @@
+[
+  {
+
+    "link": "https://www.appbrewery.co/p/web-development-course-resources/",
+    "icon": "appBrewery.png",
+    "title": ""
+  },
+  {
+    "link": "http://codingheroes.io/resources/",
+    "icon": "jonasRsrc.png",
+    "title": "Jonas Resources"
+  },
+  {
+    "link": "https://github.com/jonasschmedtmann/advanced-css-course",
+    "icon": "github-folder.png",
+    "title": "CSS and SASS"
+  },
+  {
+    "link": "https://github.com/jonasschmedtmann/complete-javascript-course",
+    "icon": "github-folder.png",
+    "title": "JS Complete"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "course": "Javascript",
+    "teacher": "UC Davis",
+    "link": "https://www.coursera.org/programs/digital-reskilling-for-the-state-of-minnesota-pblpk/browse?currentTab=MY_COURSES&productId=ITzFgWcfEeu9_RKrQPS2LQ&productType=s12n&query=javascript+for+beginners&showMiniModal=true"
+  },
+  {
+    "course": "JS, jQuery, JSON",
+    "teacher": "U Mich",
+    "link": "https://www.coursera.org/learn/javascript-jquery-json/home/welcome"
+  },
+  {
+    "course": "Algebra",
+    "teacher": "Johns Hopkins",
+    "link": "https://www.coursera.org/programs/digital-reskilling-for-the-state-of-minnesota-pblpk?currentTab=MY_COURSES&productId=gyAe3rqxEeuZnhIPVarOzw&productType=s12n&showMiniModal=true"
+  },
+  {
+    "course": "React Stack",
+    "teacher": "U Hong Kong",
+    "link": "https://www.coursera.org/programs/state-of-minnesota-on-coursera-2bf1w?currentTab=MY_COURSES&productId=child~G6rwdXCuEeu6ghJXE4kKiQ&productType=s12n&showMiniModal=true"
+  },
+  {
+    "course": "SEO",
+    "teacher": "UC Davis",
+    "link": "https://www.coursera.org/programs/digital-reskilling-for-the-state-of-minnesota-pblpk?currentTab=MY_COURSES&productId=child~_Bp7mBcUEeqrWg7rzXZoqw&productType=s12n&showMiniModal=true"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "link": "https://www.freecodecamp.org/",
+    "icon": "freecodecamp.png",
+    "title": "freeCodeCamp"
+  },
+  {
+    "link": "https://javascript.info/",
+    "icon": "jsInfo.png",
+    "title": "js Info"
+  },
+  {
+    "link": "https://developer.mozilla.org/en-US/",
+    "icon": "mdn.png",
+    "title": "Mozilla devNet"
+  },
+  {
+    "link": "https://www.w3schools.com/",
+    "icon": "w3s.png",
+    "title": ""
+  },
+  {
+    "link": "https://getbootstrap.com/",
+    "icon": "bootstrap.png",
+    "title": "bootstrap"
+  },
+  {
+    "link": "https://nodejs.org/en/",
+    "icon": "nodeJs.png",
+    "title": "node.js"
+  },
+  {
+    "link": "https://css-tricks.com/",
+    "icon": "cssTricks.png",
+    "title": "CSS Tricks"
+  },
+  {
+    "link": "https://www.npmjs.com/",
+    "icon": "npm.png",
+    "title": ""
+  }
+]

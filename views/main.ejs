@@ -1,0 +1,84 @@
+<%- include('partials/header'); -%>
+
+<section class="main-content">
+
+  <div class="main-column">
+
+    <div class="main-row">
+      <h2>udemy courses</h2>
+      <div class="flex-line">
+        <% udemy.forEach(mooc => {%>
+        <a class="tile udemy-link" href="<%=mooc.link%>">
+          <h4><%=mooc.course%></h4>
+          <h6><%=mooc.teacher%></h6>
+        </a>
+        <% }) %>
+      </div>
+    </div>
+
+    <div class="main-row">
+      <h2>coursera courses</h2>
+      <div class="flex-line">
+        <% coursera.forEach(mooc => {%>
+        <a class="tile coursera-link" href="<%=mooc.link%>">
+          <h4><%=mooc.course%></h4>
+          <h6><%=mooc.teacher%></h6>
+        </a>
+        <% }) %>
+      </div>
+    </div>
+
+    <div class="main-row">
+      <h2>course resources</h2>
+      <div class="flex-line">
+        <% courseRsrcs.forEach(crs => {%>
+        <a class="tile udemy-link" href="<%=crs.link%>">
+          <img src="/img/<%=crs.icon%>" />
+          <% if(crs.title) { %>
+          <h6><%=crs.title%></h6>
+          <% } %>
+        </a>
+        <% }) %>
+      </div>
+    </div>
+
+    <div class="main-row">
+      <h2>other resources</h2>
+      <div class="flex-line">
+        <% otherRsrcs.forEach(crs => {%>
+        <a class="tile" href="<%=crs.link%>">
+          <img src="/img/<%=crs.icon%>" />
+          <% if(crs.title) { %>
+          <h6><%=crs.title%></h6>
+          <% } %>
+        </a>
+        <% }) %>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="main-column projects-column">
+    <h2>projects</h2>
+
+    <div class="projects-box">
+
+      <% for(let i = 0; i < projects.length; i++){ %>
+      <div class="item glazed">
+        <input type="checkbox" />
+        <h4><%=projects[i]%></h4>
+      </div>
+      <% } %>
+
+    </div>
+
+    <form class="projects-input" action="/" method="post">
+      <input class="glazed" type="text" name="newItem" placeholder="Add an item" autocomplete="off" />
+      <button type="submit" name="list" value="newProject">Add a Project</button>
+    </form>
+
+  </div>
+
+</section>
