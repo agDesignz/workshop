@@ -28,7 +28,16 @@ app.get("/", (req, res) => {
   })
 })
 
-const projects = []
+const projects = [
+  "Total Thai",
+  "Theatre Planner (like this app)",
+  "Shopping List and Menus",
+  "Wheeky Boyz",
+  "Flesh out DKG Landscaping",
+  "Scraping app (from articles)",
+  "video upload app",
+  "other crap from the articles"
+]
 
 app.post("/", async (req, res) => {
   let newProject = req.body.newItem
