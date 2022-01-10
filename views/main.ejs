@@ -1,6 +1,6 @@
 <%- include('partials/header'); -%>
 
-<section class="main-content">
+<section class="main-content container">
 
   <div class="main-column">
 
@@ -61,7 +61,11 @@
 
 
   <div class="main-column projects-column">
-    <h2>projects</h2>
+    <div class="list-top">
+          <h2>projects</h2>
+          <button id="add-button" class="project-button">Add a Project</button>
+    </div>
+
 
     <div class="projects-box">
 
@@ -73,12 +77,21 @@
       <% } %>
 
     </div>
-
+<%#
     <form class="projects-input" action="/" method="post">
       <input class="glazed" type="text" name="newItem" placeholder="Add an item" autocomplete="off" />
       <button type="submit" name="list" value="newProject">Add a Project</button>
-    </form>
+    </form> %>
 
   </div>
 
 </section>
+
+<div id="input-modal">
+  <div class="input-box">
+    <form class="projects-input" action="/" method="post">
+      <input class="glazed" type="text" name="newItem" placeholder="Add an item" autocomplete="off" />
+      <button class="project-button" type="submit" name="list" value="newProject">Add a Project</button>
+    </form>
+  </div>
+</div>
