@@ -1,4 +1,4 @@
-<%- include('partials/header'); -%>
+<%- include('partials/header') -%>
 
 <section class="main-content container">
 
@@ -58,40 +58,34 @@
 
   </div>
 
-
-
   <div class="main-column projects-column">
-    <div class="list-top">
-          <h2>projects</h2>
-          <button id="add-button" class="project-button">Add a Project</button>
-    </div>
-
+      <h2>projects</h2>
 
     <div class="projects-box">
 
-      <% for(let i = 0; i < projects.length; i++){ %>
-      <div class="item glazed">
-        <input type="checkbox" />
-        <h4><%=projects[i]%></h4>
-      </div>
-      <% } %>
+      <% projects.forEach( project => { %>
+      <form action="/delete" method="post">
+        <a href="<%= project.link %>" class="project-link">
+          <div class="item glazed">
+            <h4><%=project.name%></h4>
+            <input onChange="this.form.submit()" type="checkbox" name="checkbox" value="<%= project._id %>" />
+          </div>
+        </a>
+      </form>
+
+      <% }) %>
 
     </div>
-<%#
-    <form class="projects-input" action="/" method="post">
-      <input class="glazed" type="text" name="newItem" placeholder="Add an item" autocomplete="off" />
-      <button type="submit" name="list" value="newProject">Add a Project</button>
-    </form> %>
-
+<button id="add-button" class="project-button"><h4>Add a Project</h4></button>
   </div>
 
 </section>
 
-<div id="input-modal">
+<div id="input-modal" class="modal">
   <div class="input-box">
     <form class="projects-input" action="/" method="post">
-      <input class="glazed" type="text" name="newItem" placeholder="Add an item" autocomplete="off" />
-      <button class="project-button" type="submit" name="list" value="newProject">Add a Project</button>
+      <input class="glazed" type="text" name="newProject" placeholder="Add an item" autocomplete="off" />
+      <button class="project-button" type="submit" name="projectsList" value="newProject">Add a Project</button>
     </form>
   </div>
 </div>
